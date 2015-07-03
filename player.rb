@@ -33,6 +33,7 @@ class Player
         @life -= 1
       end
     puts "#{@name} has #{@points} points and #{@life} lives left!"
+    puts "\n"
   end
 
 end
