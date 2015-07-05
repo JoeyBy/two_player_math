@@ -16,7 +16,7 @@ def game_start
       end
     end
   @player_one.ask_question 
-  @player_two.ask_question
+  @player_two.ask_questiongit
   end
 end
 
