@@ -1,7 +1,5 @@
 require_relative 'player'
 
-
-
 def game_start
   loop do
     if @player_one.life == 0 || @player_two.life == 0
@@ -16,7 +14,7 @@ def game_start
       end
     end
   @player_one.ask_question 
-  @player_two.ask_questiongit
+  @player_two.ask_question
   end
 end
 
@@ -28,10 +26,9 @@ puts "Person two... enter your name"
 @player_one = Player.new(@ident_one)
 @player_two = Player.new(@ident_two)
 
-puts "Are you ready!?!? (Y/N)"
+puts "Are you ready to play!?!? (Y/N)"
 y_n = gets.chomp.upcase
 
 if y_n == "Y"
   game_start
 end
-
